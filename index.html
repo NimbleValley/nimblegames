@@ -1,0 +1,68 @@
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="site.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Erica+One&family=Orbitron:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<audio src="sounds/blackkitty.mp3" id="myAudio"></audio>
+	<header>
+		<ul id="menu">
+			<h3 id=logo>Nimble Games</h3>
+			<li>
+				<button class = "mainfields" id = abouttab onclick="window.location.href='about.html';">
+					About
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = gamestab onClick="window.location.href='games.html';">
+					Games
+				</button>
+			</li>
+			<script>
+				var gamestab = document.getElementById("gamestab");
+				gamestab.addEventListener("click", playMyAudio());
+
+				function playMyAudio(){
+				  document.getElementById("myAudio").play();
+				}
+			  </script>
+			<li>
+				<button class = "mainfields" id = modelstab>
+					Art
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = newstab onclick="window.location.href='news.html'">
+					News
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = hometab onclick="window.location.href='index.html'">
+					Home
+				</button>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<h1> <strong> Welcome to this (horrible) webpage! </strong> Look around to find what you want!</h1>
+		<p> Many games are linked here, all throughout the site. Look for headers at the top. I assure you that this site will not spy on you. </p>
+		<div id = "review">
+			<h1 id = "specialHeading">Sean S</h1>
+			<p>They are all quality game and I like the time and effort you put in</p>
+		</div>
+
+		<audio controls >
+			<source src="sounds/blackkitty.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		  </audio>
+	</main>
+</body>
+<footer>
+	&copy; 2022 Mason McManus
+</footer>
+</body>
+
+</html>

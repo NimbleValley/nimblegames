@@ -1,0 +1,466 @@
+main {
+	padding: 100px 0px;
+	margin: 0px;
+	font-size: 20px;
+	color: black;
+}
+
+body {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(79,79,79,1) 100%);
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2 {
+	padding: 20px 0px;
+	font-size: 30px;
+	color: #000000;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(189,189,189);
+	background: linear-gradient(180deg, rgba(189,189,189,0.8239670868347339) 0%, rgba(88,88,88,0.8099614845938375) 100%);
+	border-radius: 25px;
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.gametitle {
+	font-family: orbitron;
+	font-size: 5vh;
+	background: rgb(78, 207, 106);
+	background: linear-gradient(180deg, rgba(78, 207, 78, 1) 0%, rgba(8, 40, 8, 1) 100%);	width: 80%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	max-height: 20%;
+	min-width: 100%;
+	margin-top: 0%;
+}
+
+.game {
+	transition-duration: 1s;
+	background: rgb(42,90,156);
+	background: linear-gradient(180deg, rgba(42,90,156,0.8239670868347339) 0%, rgba(14,40,74,0.8099614845938375) 100%);
+	text-align: center;
+	border-radius: 25px;
+	max-width: 90%;
+	border-collapse: collapse;
+	display: flex;
+}
+
+.hovertext {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: absolute;
+	margin-bottom: 0%;
+    bottom: 0%;
+}
+
+.game:hover {
+	cursor: pointer;
+	background-color: violet;
+	text-align: center;
+	border-radius: 25px;
+	border: 1vw solid rgba(60, 255, 0, 0.699);
+}
+
+.gamedescription{
+	background-color: rgba(0, 0, 0, 0.6);
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: relative;
+	margin-bottom: 0%;
+    bottom: 0%;
+	float:right;
+	max-height: 20%;
+	min-width: 100%;
+	margin-top: 0%;
+	z-index: 5;
+	display: none;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#airhockey {
+	background-image: url('img/airhockeyicon.png');
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+#soccer {
+	background-image: url('img/soccericon.png');
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+#tron {
+	background-image: url('img/tronicon.png');
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+#bridge {
+	background-image: url('img/bridgeicon.png');
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+.gamescontainer{
+	display: grid;
+  	column-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 350px 350px 350px;
+	grid-gap: 3rem;
+	position: relative;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.newsletter {
+	transition-duration: 0.4s;
+	background: rgb(42,90,156);
+	background: linear-gradient(180deg, rgba(42,90,156,0.8239670868347339) 0%, rgba(14,40,74,0.8099614845938375) 100%);
+	width:50%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	min-height: 70vh;
+	border-radius: 25px;
+}
+
+.newsletter:hover {
+	cursor: pointer;
+	background-color: violet;
+	width:55%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	min-height: 75vh;
+	border-radius: 25px;
+}
+
+.newslettertitle {
+	font-family: orbitron;
+	font-size: 7vh;
+	padding: 10;
+	background: rgb(78,92,207);
+	background: linear-gradient(180deg, rgba(78,92,207,0.8239670868347339) 0%, rgba(8,11,40,0.8099614845938375) 100%);	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 25px;
+	min-height: 10vh;
+}
+
+.websitenews {
+	transition-duration: 0.4s;
+	background: rgb(81,200,71);
+background: linear-gradient(180deg, rgba(81,200,71,0.8239670868347339) 0%, rgba(63,101,45,0.8099614845938375) 100%);
+	width:50%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	min-height: 60vh;
+	border-radius: 25px;
+}
+
+.websitenews:hover {
+	cursor: pointer;
+	background-color: rgb(248, 248, 248);
+	width:55%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	min-height: 65vh;
+	border-radius: 25px;
+}
+
+.websitenewstitle {
+	font-family: orbitron;
+	font-size: 7vh;
+	padding: 10;
+	background: rgb(84,255,71);
+	background: linear-gradient(180deg, rgba(84,255,71,0.8239670868347339) 0%, rgba(29,163,29,0.8099614845938375) 100%);
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 25px;
+	min-height: 10vh;
+	max-width: 80%;
+}
+
+.search {
+	padding: 1vw;
+	display: inline-block;
+	background: rgb(30,54,255);
+	color: white;
+	background: linear-gradient(180deg, rgba(30,54,255,0.8239670868347339) 0%, rgba(0,9,83,0.8099614845938375) 100%);
+	border-radius: 15px;
+}
+
+.dropdown{
+	transition-duration: 0.4s;
+  background-color: #ffbd07;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: 4vh;
+}
+
+.dropdown:hover{
+	background-color: #ff6207;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: 4vh;
+	cursor: pointer;
+  }
+
+#menu li{
+	display: inline;
+	padding: 0%;
+	
+}
+
+header {
+	position:fixed;
+	background-color: #0e0e0e;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	height: 12vh;
+    border: 0;
+	width:100%;
+	margin-top: 0;
+	top: 0%;
+	z-index: 10;
+}
+
+p {
+	padding: 1.5vw;
+	color: blanchedalmond;
+	display: inline-block
+}
+
+li {
+	padding:0;
+}
+
+#logo:hover{
+	cursor: pointer;
+	color: rgb(216, 81, 40);
+}
+
+.mainfields:hover {
+	background-color: #b2b9b2; /* Green */
+	color: white;
+	cursor: pointer;
+}
+
+#abouttab {
+	border: 0.5vw solid #ff9900;
+}
+
+#abouttab:hover {
+	background: rgb(255,81,0);
+background: linear-gradient(180deg, rgba(255,81,0,1) 0%, rgba(255,196,0,1) 100%);
+border: none;
+	color: black;
+	font-size: 2.5vw;
+}
+
+#gamestab {
+	border: 0.5vw solid #00ff37;
+}
+
+#gamestab:hover {
+	background: rgb(0,255,42);
+background: linear-gradient(180deg, rgba(0,255,42,1) 0%, rgba(135,181,14,1) 100%);
+border: none;
+	color: black;
+	font-size: 2.5vw;
+}
+
+#modelstab {
+	border: 0.5vw solid #ff0000;
+}
+
+#modelstab:hover {
+	background: rgb(255,0,0);
+background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,89,0,1) 100%);
+	border:none;
+	color: black;
+	font-size: 2.4vw;
+}
+
+h3 {
+	margin-top: 1vh !important;
+	font-size: 6vh !important;
+}
+
+#newstab {
+	border: 0.5vw solid #0004ff;
+}
+
+#newstab:hover {
+	background: rgb(0,14,255);
+background: linear-gradient(180deg, rgba(0,14,255,1) 0%, rgba(0,40,94,1) 100%);
+	border:none;
+	font-size: 2.5vw;
+}
+
+#hometab {
+	border: 0.5vw solid #00c3ff;
+}
+
+#hometab:hover {
+	background: rgb(0,245,255);
+background: linear-gradient(180deg, rgba(0,245,255,1) 0%, rgba(0,94,150,1) 100%);
+	border:none;
+	font-size: 2.5vw;
+}
+
+.mainfields {
+	transition-duration: 0.4s;
+	font-family: 'Alfa Slab One', cursive !important;
+	height: 10vh;
+	float: right;
+	width: 10%;
+	margin-top: 0;
+	padding: 0%;
+	background-color: #000000; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 0;
+  	text-decoration: none;
+  	font-size: 2vw;;
+  	border: 5px solid #4CAF50; /* Green */
+	vertical-align: top;
+}
+
+button {
+	vertical-align: top !important;
+}
+
+#logo {
+	font-family: 'Orbitron', sans-serif;
+	font-style: italic;
+	color: rgb(255, 199, 94);
+	float: left;
+	text-align: center;
+}
+
+a {
+	color: yellow;
+	font-size: 6vh;
+	transition-duration: 0.4s;
+	font-family: Orbitron;
+}
+
+a:hover {
+	color: rgb(255, 136, 0);
+	text-shadow: 2px 2px 5px red;
+}
+
+footer {
+	background-color: #202020;
+	text-align: center;
+	color: lightblue;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 20px;
+	left: 0;
+    bottom: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#description {
+	transition-duration: 0.4s;
+	background-color: rgba(255, 255, 255, 0.541);
+	border-radius: 25px;
+	width:50%;
+	margin-left: 10px;
+	color: black;
+}
+
+#description:hover {
+	background-color: rgba(46, 46, 46, 0.541);
+	border-radius: 25px;
+	width:50%;
+	margin-left: 10px;
+	color: rgb(0, 247, 255);
+	text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+	cursor:grab;
+}
+
+
+#menu li a {
+	text-decoration: none;
+}
+
+#menu li.active {
+	color: green !important;
+}
+
+#gameLink {
+	position: relative;
+	transition-duration: 0.4s;
+    color:rgb(0, 255, 0);
+    font-style: italic;
+    font-size: 50px;
+    min-width:100%;
+	padding: 10;
+	margin-right: auto;
+	margin-left: 0;
+	text-align: center;
+	font-family: Orbitron;
+}
+
+#gameLink:hover {
+    color:blue;
+    font-style: italic;
+    width:100%;
+	background-color: rgba(172, 172, 172, 0.342);
+	border: 10px solid rgb(0,0,0);
+	border-radius: 25px;
+}
+
+#specialLink {
+    color:blue;
+    font-style: normal;
+    font-size: 20px;
+    width:100%;
+}
+
+#specialLink:hover {
+    color:orange;
+    font-style: italic;
+	outline: red;
+	outline-style: dashed;
+	outline-width: medium;
+	outline-offset: 0px;
+    font-size: 20px;
+    width:100%;
+}
+
+#review {
+	background: rgb(201, 118, 118);
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 500px;
+	padding: 10px;
+}
+
+#specialHeading {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(202, 195, 129);
+	text-align: center;
+	font-size: 50px;
+	color: black;
+}
+
+#review div {
+	display: inline;
+	padding: 8px;
+}
+
+#active {
+	color:red;
+}

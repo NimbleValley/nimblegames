@@ -1,0 +1,100 @@
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="site.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Erica+One&family=Orbitron:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio src="sounds/blackkitty.mp3" id="myAudio"></audio>
+	<header>
+		<ul id="menu">
+			<h3 id=logo >Nimble Games</h3>
+			<li>
+				<button class = "mainfields" id = abouttab onclick="window.location.href='about.html'">
+					About
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = gamestab onclick="window.location.href='games.html';">
+					Games
+				</button>
+			</li>
+            <script>
+				var gamestab = document.getElementById("gamestab");
+				gamestab.addEventListener("click", playMyAudio());
+
+				function playMyAudio(){
+				  document.getElementById("myAudio").play();
+				}
+			  </script>
+			<li>
+				<button class = "mainfields" id = modelstab>
+					Art
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = newstab onclick="window.location.href='news.html'">
+					News
+				</button>
+			</li>
+			<li>
+				<button class = "mainfields" id = hometab onclick="window.location.href='index.html'">
+					Home
+				</button>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<h1><strong> Games - Our Pride and Glory</strong></h1>
+		<p>
+            It was updated :)
+        </p>
+
+        <div class = "search">
+        <label for="cars"><strong>Use a filter</strong>:</label>
+<select name="filternews" class="dropdown">
+  <option value="default">Type...</option>
+  <option value="website">Website</option>
+  <option value="game">Game</option>
+  <option value="nletter">Newsletter</option>
+</select>
+        </div>
+        <div></div>
+
+        <div class = "gamescontainer">
+            <div class = "left game grid-item" id = bridge onclick="window.location.href='bridge.html'">
+                <h4 class = "gametitle">BRIDGE</h4>
+                <p class = "gamedescription" valign="bottom">
+                   A bridge game ;)
+                </p>
+            </div>
+        <div class = "left game grid-item" id = airhockey onclick="window.location.href='airhockey.html'">
+            <h4 class = "gametitle">AIR HOCKEY</h4>
+            <p class = "gamedescription" valign="bottom">
+               A classic 2p game of skill
+            </p>
+        </div>
+        <div class = "left game grid-item" id = soccer onclick="window.location.href='soccer.html'">
+            <h4 class = "gametitle">Soccer</h4>
+            <p class = "gamedescription" valign="bottom">
+               A fun 2p game of soccer
+            </p>
+        </div>
+        <div class = "left game grid-item" id = tron onclick="window.location.href='tron.html'">
+            <h4 class = "gametitle">TRON</h4>
+            <p class = "gamedescription" valign="bottom">
+               A classic 2p game of Tron
+            </p>
+        </div>
+    </div>
+
+	</main>
+</body>
+<footer>
+	&copy; 2022 Mason McManus
+</footer>
+</body>
+
+</html>
