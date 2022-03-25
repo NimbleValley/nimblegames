@@ -27,6 +27,26 @@ h2 {
 	margin-right: auto;
 }
 
+#lighthousei {
+	background-image: url("img/Lighthouse\ \(1\).png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#lighthousei:hover:after {
+	content: 'Lighthouse';
+}
+
+#windmilli {
+	background-image: url("img/Windmill.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#windmilli:hover:after {
+	content: 'Windmill';
+}
+
 #pagotai {
 	background-image: url("img/Japanese.png");
 	background-repeat: no-repeat;
@@ -34,7 +54,7 @@ h2 {
 }
 
 #pagotai:hover:after {
-	content: 'Pagoda - March 2022';
+	content: 'Pagoda';
 }
 
 #castlei {
@@ -44,21 +64,24 @@ h2 {
 }
 
 #castlei:hover:after {
-	content: 'Castle - March 2022';
+	content: 'Castle';
+}
+
+#empty {
+	box-shadow: none;
 }
 
 .artimage {
 	display: flex;
 	float: left;
-  	margin: 10px;
-	width: 20vw !important;
-	height: 35vh;
+  	margin: .7vw;
+	width: 23vw !important;
+	height: 15vw;
 	justify-content: center;
   	align-items: center;
 	  box-shadow: rgba(0, 0, 0, 0.116) 0 0 0 5px inset,
   0 0 5px grey,
   0 0 10px grey inset;
-	  /* hover-out transition */
 	  transition: box-shadow 1s;
 }
 
@@ -80,8 +103,6 @@ h2 {
   }
 	
 .artimage:hover {
-	width: 20%;
-	height: 35vh;
 	cursor: alias;
 	box-shadow: rgba(0, 0, 0, 0.678) 0 0 0 150px inset,
 	0 0 5px grey;
