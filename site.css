@@ -6,8 +6,12 @@ main {
 }
 
 body {
-	background: rgb(0, 0, 0);
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(79, 79, 79, 1) 100%);
+	/*background: rgb(0, 0, 0);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(79, 79, 79, 1) 100%);*/
+	background-image: url("img/BackgroundGames.png");
+	background-size: 35em;
+	background-position: center center;
+    background-repeat: repeat;
 	padding: 0;
 	margin: 0;
 }
@@ -19,12 +23,13 @@ h2 {
 	color: #000000;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	background: rgb(189, 189, 189);
-	background: linear-gradient(180deg, rgba(189, 189, 189, 0.8239670868347339) 0%, rgba(88, 88, 88, 0.8099614845938375) 100%);
+	background: linear-gradient(180deg, rgba(189, 189, 189, 1) 0%, rgba(88, 88, 88, 1) 100%);
 	border-radius: 25px;
 	width: 70%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	border: 10px solid rgb(0, 0, 0)
 }
 
 #lighthousei {
