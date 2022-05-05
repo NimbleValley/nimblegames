@@ -114,7 +114,7 @@ h2 {
 }
 
 .gametitle {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.863);
 	width: 80%;
 	font-family: orbitron;
 	max-height: 20%;
@@ -132,16 +132,8 @@ h2 {
 	max-width: 90%;
 	border-collapse: collapse;
 	display: flex;
-}
-
-.hovertext {
-	background-color: rgba(0, 0, 0, 0.6);
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	position: absolute;
-	margin-bottom: 0%;
-	bottom: 0%;
+	box-shadow: 0px 0px 40px #0a250b;
+	border: 5px solid black;
 }
 
 .game:hover {
@@ -152,24 +144,38 @@ h2 {
 	background-color: rgb(255, 9, 9) !important;
 	font-size: 220%;
 	text-shadow: 0 0 15px #FF0000, 0 0 15px #0000FF;
+	box-shadow: 0px 0px 50px #107415;
 }
 
-.gamedescription {
-	background-color: rgba(0, 0, 0, 0.6);
-	position: relative;
+.hovertext {
+	background-color: rgb(0, 0, 0);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: absolute;
 	margin-bottom: 0%;
 	bottom: 0%;
-	float: right;
-	max-height: 20%;
-	min-width: 100%;
-	margin-top: 0%;
+}
+
+
+.gamedescription {
+	background-color: rgb(0, 0, 0);
+	position: relative;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	position: inherit;
 	z-index: 5;
-	display: none;
 	grid-template-columns: repeat(3, 1fr);
+	padding: 0%;
+	display: none;
 }
 
 .backbutton {
 	font-size: 4vh;
+}
+
+#Spacer {
+	padding: 25px;
 }
 
 #airhockey {
@@ -545,12 +551,38 @@ footer {
 	width: 100%;
 }
 
-#review {
-	background: rgb(201, 118, 118);
+#reviewContainer {
+	background: rgb(0, 0, 0);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	width: 30%;
-	padding: 10px;
-	border-radius: 10px;
+	width: 100%;
+	height: 50%;
+	margin-top: 10%;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#reviewHeading {
+	margin-top: 0;
+}
+
+#review {
+	display: inline;
+	position: relative;
+	background-color: #000000;
+	text-align: center;
+	max-width: 25vw;
+	transition-duration: 1s;
+	height: 105%;
+	color: #079cff;
+	font-size: 5vw;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#review:hover {
+	background-color: #3a3a3a;
+	color: #cc00ff;
+	text-shadow: 2px 2px 20px rgb(0, 174, 255);
 }
 
 #specialHeading {
@@ -670,4 +702,8 @@ footer {
 	font-family: "orbitron";
 	color: #ff6f00;
 	cursor: pointer;
+}
+
+#logo {
+	text-decoration: none;
 }
