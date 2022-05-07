@@ -497,6 +497,20 @@ footer {
 	border: 5px solid rgb(54, 54, 54);
 }
 
+.counterContainer {
+	background-color: #000000;
+	float: right;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+#countText {
+	font-size: 1.5vw;
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-top: 0;
+}
+
 
 #menu li a {
 	text-decoration: none;
