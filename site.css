@@ -263,38 +263,34 @@ h2 {
 
 .websitenews {
 	transition-duration: 0.4s;
-	background: rgb(81, 200, 71);
-	background: linear-gradient(180deg, rgba(81, 200, 71, 0.8239670868347339) 0%, rgba(63, 101, 45, 0.8099614845938375) 100%);
+	border: 10px solid black;
+	background: linear-gradient(180deg, rgba(13, 39, 155, 1) 0%, rgba(14, 127, 179, 1) 100%);
 	width: 50%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 60vh;
-	border-radius: 25px;
 }
 
 .websitenews:hover {
 	cursor: pointer;
-	background-color: rgb(248, 248, 248);
-	width: 55%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	min-height: 65vh;
-	border-radius: 25px;
+	box-shadow: 0px 0px 50px rgb(56, 159, 255);
 }
 
 .websitenewstitle {
 	font-family: orbitron;
 	font-size: 7vh;
-	padding: 10;
-	background: rgb(84, 255, 71);
-	background: linear-gradient(180deg, rgba(84, 255, 71, 0.8239670868347339) 0%, rgba(29, 163, 29, 0.8099614845938375) 100%);
+	background: rgb(27, 25, 194);
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 25px;
+	margin-top: 0;
 	min-height: 10vh;
-	max-width: 80%;
+	max-width: 100%;
+	color: #079cff;
+	box-shadow: 0px 20px 50px -15px rgb(0, 162, 255);
 }
 
 .search {
@@ -468,9 +464,9 @@ a:hover {
 }
 
 footer {
-	background-color: #202020;
+	background-color: #0c0c0c;
 	text-align: center;
-	color: lightblue;
+	color: rgb(255, 136, 0);
 	padding: 5px;
 	position: fixed;
 	bottom: 0;
@@ -478,27 +474,27 @@ footer {
 	font-size: 20px;
 	left: 0;
 	bottom: 0;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-shadow: 1px 1px 10px red;
 }
 
 #description {
 	transition-duration: 0.4s;
 	background-color: rgb(0, 0, 0);
-	border-radius: 25px;
 	width: 50%;
-	margin-left: 10px;
-	color: rgb(243, 116, 255);
+	margin-left: 20px;
+	color: rgb(53, 147, 255);
 	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 5px solid rgb(36, 36, 36);
 }
 
 #description:hover {
 	background-color: rgb(0, 0, 0);
-	border-radius: 25px;
-	width: 50%;
-	margin-left: 10px;
-	color: rgb(0, 247, 255);
-	text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+	color: rgb(225, 0, 255);
+	text-shadow: 0 0 15px #0099ff;
 	cursor: grab;
+	border: 5px solid rgb(54, 54, 54);
 }
 
 
@@ -511,15 +507,13 @@ footer {
 }
 
 #gameLink {
-	position: relative;
 	transition-duration: 0.4s;
 	color: rgb(0, 255, 0);
 	font-style: italic;
 	font-size: 50px;
-	min-width: 100%;
-	padding: 10;
-	margin-right: auto;
-	margin-left: 0;
+	padding: 10px;
+	margin-right: auto !important;
+	margin-left: auto !important;
 	text-align: center;
 	font-family: Orbitron;
 }
@@ -528,9 +522,6 @@ footer {
 	color: blue;
 	font-style: italic;
 	width: 100%;
-	background-color: rgba(172, 172, 172, 0.342);
-	border: 10px solid rgb(0, 0, 0);
-	border-radius: 25px;
 }
 
 #specialLink {
@@ -557,7 +548,7 @@ footer {
 	width: 100%;
 	height: 50%;
 	margin-top: 10%;
-	padding: 15px;
+	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -567,22 +558,32 @@ footer {
 }
 
 #review {
-	display: inline;
+	text-shadow: 0px 0px 10px rgb(204, 0, 255);
+	padding: 0%;
 	position: relative;
 	background-color: #000000;
 	text-align: center;
 	max-width: 25vw;
 	transition-duration: 1s;
-	height: 105%;
+	float: left;
+	height: 100%;
 	color: #079cff;
 	font-size: 5vw;
+	width: 25%;;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: "Orbitron";
 }
 
 #review:hover {
-	background-color: #3a3a3a;
+	background-color: #2b2b2b;
 	color: #cc00ff;
-	text-shadow: 2px 2px 20px rgb(0, 174, 255);
+	text-shadow: 3px 3px 30px rgb(0, 174, 255);
+	cursor: move;
+}
+
+#reviewTitle {
+	font-size: 40%;
+	text-shadow: 0px 0px 30px red;
 }
 
 #specialHeading {
