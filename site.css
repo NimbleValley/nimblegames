@@ -24,7 +24,6 @@ h2 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	background: rgb(189, 189, 189);
 	background: linear-gradient(180deg, rgba(189, 189, 189, 1) 0%, rgba(88, 88, 88, 1) 100%);
-	border-radius: 25px;
 	width: 70%;
 	text-align: center;
 	margin-left: auto;
@@ -113,14 +112,31 @@ h2 {
 	0 0 5px grey;
 }
 
+#gameInfo {
+	padding: 0%;
+	list-style: none;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
 .gametitle {
 	background: rgba(0, 0, 0, 0.863);
-	width: 80%;
 	font-family: orbitron;
 	max-height: 20%;
-	min-width: 100%;
 	margin-top: 0%;
+	padding: 10px;
 	color: #d62323;
+}
+
+.gamedescription {
+	background-color: rgb(0, 0, 0);
+	padding: 5px;
+	font-size: 2vw;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	float: right;
+	bottom: 0;
+	margin-top: 180;
 }
 
 .game {
@@ -154,19 +170,6 @@ h2 {
 	position: absolute;
 	margin-bottom: 0%;
 	bottom: 0%;
-}
-
-
-.gamedescription {
-	background-color: rgb(0, 0, 0);
-	position: relative;
-	margin-bottom: 0%;
-	margin-left: 0%;
-	position: inherit;
-	z-index: 5;
-	grid-template-columns: repeat(3, 1fr);
-	padding: 0%;
-	display: none;
 }
 
 .backbutton {
@@ -209,6 +212,18 @@ h2 {
 
 #homerun {
 	background-image: url('img/HOMERUNDERBY.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#volleyball {
+	background-image: url('img/Volleyball.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#pixelhoop {
+	background-image: url('img/PixelHoop.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -355,6 +370,18 @@ li {
 	color: rgb(216, 81, 40);
 }
 
+#specialtab {
+	color: rgb(255, 102, 0);
+	border-bottom: 1vh solid rgb(111, 0, 255);
+	width: 12%;
+}
+
+#specialtab:hover {
+	color: rgb(255, 0, 0);
+	text-shadow: 0px 1px 5px #ff9100;
+	border-bottom: 1vh solid rgb(208, 167, 255);
+	box-shadow:  rgb(255, 0, 242) 0 0 0 0.25vw inset, 0 0 5px;
+}
 
 #abouttab {
 	color: rgb(255, 235, 193);
@@ -532,13 +559,13 @@ footer {
 }
 
 #gameLink:hover {
-	color: blue;
+	color: rgb(0, 38, 255);
 	font-style: italic;
 	width: 100%;
 }
 
 #specialLink {
-	color: blue;
+	color: rgb(0, 255, 179);
 	font-style: normal;
 	font-size: 20px;
 	width: 100%;
