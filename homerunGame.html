@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Homerun Derby</title>
+    <title>Unity WebGL Player | Slam Baseball</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Homerun Derby</div>
+        <div id="unity-build-title">Slam Baseball</div>
       </div>
     </div>
     <script>
@@ -55,16 +55,16 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "homerunBuild";
-      var loaderUrl = buildUrl + "/HOMERUN DERBY BUILD.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/HRDBUILD.loader.js";
       var config = {
-        dataUrl: buildUrl + "/HOMERUN DERBY BUILD.data",
-        frameworkUrl: buildUrl + "/HOMERUN DERBY BUILD.framework.js",
-        codeUrl: buildUrl + "/HOMERUN DERBY BUILD.wasm",
+        dataUrl: buildUrl + "/HRDBUILD.data.gz",
+        frameworkUrl: buildUrl + "/HRDBUILD.framework.js.gz",
+        codeUrl: buildUrl + "/HRDBUILD.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Homerun Derby",
-        productVersion: "0.1",
+        productName: "Slam Baseball",
+        productVersion: "1.0.5",
         showBanner: unityShowBanner,
       };
 

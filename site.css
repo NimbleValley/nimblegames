@@ -112,6 +112,34 @@ h2 {
 	0 0 5px grey;
 }
 
+.homeVideo {
+	width:45%;
+	padding: 25px;
+	display:inline;
+}
+
+#homeSection {
+	margin-top: 5%;
+	background-color: #080c08;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid rgb(51, 51, 51);
+}
+
+#homeSection div{
+	display:inline;
+}
+
+.hometext {
+	color: white;
+	top: 0;
+	float:right;
+	position: relative;
+	font-size:xx-large;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #gameInfo {
 	padding: 0%;
 	list-style: none;
@@ -157,9 +185,9 @@ h2 {
 	background-color: violet;
 	text-align: center;
 	color: rgb(43, 255, 0);
-	background-color: rgb(255, 9, 9) !important;
+	background-color: black;
 	text-shadow: 0 0 15px #FF0000, 0 0 15px #0000FF;
-	box-shadow: 0px 0px 50px #107415;
+	box-shadow: 0px 0px 50px #11b619;
 }
 
 .hovertext {
@@ -352,8 +380,10 @@ header {
 
 p {
 	padding: 1.5vw;
-	color: blanchedalmond;
-	display: inline-block
+	color: rgb(255, 153, 0);
+	display: inline-block;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-shadow: 1px 1px 20px rgb(255, 115, 0);
 }
 
 h3 {
@@ -371,16 +401,15 @@ li {
 }
 
 #specialtab {
-	color: rgb(255, 102, 0);
-	border-bottom: 1vh solid rgb(111, 0, 255);
+	color: rgb(207, 205, 77);
+	border-bottom: 1vh solid rgb(255, 255, 0);
 	width: 12%;
 }
 
 #specialtab:hover {
-	color: rgb(255, 0, 0);
-	text-shadow: 0px 1px 5px #ff9100;
-	border-bottom: 1vh solid rgb(208, 167, 255);
-	box-shadow:  rgb(255, 0, 242) 0 0 0 0.25vw inset, 0 0 5px;
+	color: rgb(255, 187, 0);
+	text-shadow: 0px 1px 25px #ff9100;
+	border-bottom: 1.5vh solid rgb(255, 217, 146);
 }
 
 #abouttab {
@@ -389,10 +418,9 @@ li {
 }
 
 #abouttab:hover {
-	color: rgb(255, 213, 157);
-	text-shadow: 0px 1px 5px #ffffff;
-	border-bottom: 1vh solid rgb(255, 222, 160);
-	box-shadow:  rgb(255, 174, 0) 0 0 0 0.25vw inset, 0 0 5px;
+	color: rgb(255, 145, 0);
+	text-shadow: 0px 1px 25px #ff9900;
+	border-bottom: 1.5vh solid rgb(255, 94, 0);
 }
 
 #gamestab {
@@ -401,10 +429,9 @@ li {
 }
 
 #gamestab:hover {
-	color: rgb(157, 255, 162);
-	text-shadow: 0px 1px 5px #ffffff;
-	border-bottom: 1vh solid rgb(159, 255, 167);
-	box-shadow:  rgb(0, 255, 21) 0 0 0 0.25vw inset, 0 0 5px;
+	color: rgb(145, 255, 0);
+	text-shadow: 0px 1px 25px #2bff00;
+	border-bottom: 1.5vh solid rgb(81, 255, 0);
 }
 
 #modelstab {
@@ -413,23 +440,21 @@ li {
 }
 
 #modelstab:hover {
-	color: rgb(255, 157, 157);
-	text-shadow: 0px 1px 5px #ffffff;
-	border-bottom: 1vh solid rgb(255, 102, 102);
-	box-shadow:  rgb(255, 0, 0) 0 0 0 0.25vw inset, 0 0 5px;
+	color: rgb(255, 0, 0);
+	text-shadow: 0px 1px 25px #ff3fb5;
+	border-bottom: 1.5vh solid rgb(255, 102, 102);
 }
 
 
 #newstab {
-	color: rgb(193, 194, 255);
+	color: rgb(169, 209, 236);
 	border-bottom: 1vh solid rgb(0, 4, 255);
 }
 
 #newstab:hover {
-	color: rgb(31, 84, 255);
-	text-shadow: 0px 1px 5px #ffffff;
-	border-bottom: 1vh solid rgb(102, 105, 255);
-	box-shadow:  rgb(0, 4, 255) 0 0 0 0.25vw inset, 0 0 5px;
+	color: rgb(31, 229, 255);
+	text-shadow: 0px 1px 25px #00a2ff;
+	border-bottom: 1.5vh solid rgb(0, 90, 226);
 }
 
 #hometab {
@@ -439,11 +464,13 @@ li {
 }
 
 #hometab:hover {
-	color: rgb(0, 245, 255);
-	color: linear-gradient(180deg, rgba(0, 245, 255, 1) 0%, rgba(0, 94, 150, 1) 100%);
-	text-shadow: 0px 1px 5px #ffffff;
-	border-bottom: 1vh solid rgb(155, 252, 255);
-	box-shadow:  rgb(0, 255, 242) 0 0 0 0.25vw inset, 0 0 5px 
+	color: rgb(0, 255, 242);
+	text-shadow: 0px 1px 25px #00ccff;
+	border-bottom: 1.5vh solid rgb(38, 132, 255);
+}
+
+.active {
+	text-decoration: overline;
 }
 
 .mainfields:hover {
@@ -451,7 +478,7 @@ li {
 }
 
 .mainfields {
-	transition-duration: 0.4s;
+	transition-duration: 0.2s;
 	border-bottom: 1vh solid rgb(255, 0, 0);
 	font-family: 'Orbitron', cursive !important;
 	height: 100%;
@@ -539,11 +566,7 @@ footer {
 
 
 #menu li a {
-	text-decoration: none;
-}
-
-#menu li.active {
-	color: green !important;
+	text-decoration: underline;
 }
 
 #gameLink {
@@ -583,14 +606,16 @@ footer {
 }
 
 #reviewContainer {
-	background: rgb(0, 0, 0);
+	background-color: #141314;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	margin-top: 10%;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
 }
 
 #reviewHeading {
@@ -598,32 +623,35 @@ footer {
 }
 
 #review {
-	text-shadow: 0px 0px 10px rgb(204, 0, 255);
+	text-shadow: 0px 0px 10px rgb(192, 189, 16);
 	padding: 0%;
 	position: relative;
-	background-color: #000000;
+	background-color: #141314;
 	text-align: center;
-	max-width: 25vw;
+	max-width: 20%;
 	transition-duration: 1s;
 	float: left;
+	margin-top: 0;
 	height: 100%;
-	color: #079cff;
-	font-size: 5vw;
-	width: 25%;;
+	color: #28a70f;
+	font-size: 400%;
+	width: 25%;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-family: "Orbitron";
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 10px;
 }
 
 #review:hover {
 	background-color: #2b2b2b;
-	color: #cc00ff;
-	text-shadow: 3px 3px 30px rgb(0, 174, 255);
-	cursor: move;
+	color: #ffc400;
+	text-shadow: 1px 1px 50px rgb(60, 255, 0);
+	cursor:cell;
 }
 
 #reviewTitle {
-	font-size: 40%;
-	text-shadow: 0px 0px 30px red;
+	font-size: 25%;
+	text-shadow: 0px 0px 30px rgb(133, 133, 133);
 }
 
 #specialHeading {
@@ -632,15 +660,12 @@ footer {
 	text-align: center;
 	font-size: 50px;
 	color: black;
+	transition-duration: 1ms;
 }
 
 #review div {
 	display: inline;
 	padding: 8px;
-}
-
-#active {
-	color: red;
 }
 
 .connectfourcontainer {
