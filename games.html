@@ -1,9 +1,15 @@
 <head>
 	<title>NG - GAMES</title>
+	<link rel="icon" href="img/NimbleGamesLogoN(1).png">
 	<link rel="stylesheet" href="site.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Erica+One&family=Orbitron:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Erica+One&family=Orbitron:wght@700&family=Oswald:wght@700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.typekit.net/qli0bbf.css">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,50 +50,68 @@
 		</ul>
 	</header>
 	<main>
-		<h1><strong>- NIMBLE GAMES -</strong></h1>
+		<div id="banner">
+			Games
+		</div>
+
+		<div class="fancydivider">
+			<p4 class="scrollicon"> ˅ </p4>
+			<div class="fancydividerinner">
+			</div>
+		</div>
 
 		
 		<div id = "Spacer"></div>
 
 		<div class="gamescontainer">
-			<div class="left game grid-item" id=pixelhoop onclick="window.location.href='pixelhoop.html'">
+			<div class="game" id=twentyfourtyeight onclick="window.location.href='2048/2048.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">2048</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom"> Modify it! </p>
+					</li>
+				</ul>
+			</div>
+			<div class="game" id=pixelhoop onclick="window.location.href='pixelhoop.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Pixel Hoop</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> It's ok... </p>
+						<p class="gamedescription" valign="bottom"> Won't load </p>
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=volleyball onclick="window.location.href='Volleyball.html'">
+			<div class="game" id=volleyball onclick="window.location.href='Volleyball.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Volleyball</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> Fun! </p>
+						<p class="gamedescription" valign="bottom"> Hard! </p>
 					</li>
 				</ul>
 			</div>
-			<!--<div class="left game grid-item" id=lazers onclick="window.location.href='lazers.html'">
+			<!--<div class="game" id=lazers onclick="window.location.href='lazers.html'">
 				<h4 class="gametitle">Lazers</h4>
 				<p class="gamedescription" valign="bottom">
 					Homeruns!
 				</p>
 			</div>
 		-->
-			<div class="left game grid-item" id=homerun onclick="window.location.href='homerunderby.html'">
+			<div class="game" id=homerun onclick="window.location.href='homerunderby.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Homerun Derby</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> Homeruns! </p>
+						<p class="gamedescription" valign="bottom"> Hit homeruns! </p>
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=fluent onclick="window.location.href='fluent.html'">
+			<div class="game" id=fluent onclick="window.location.href='fluent.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Fluent</h4>
@@ -97,7 +121,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=connectfour onclick="window.location.href='connectfour.html'">
+			<div class="game" id=connectfour onclick="window.location.href='connectfour.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Connect Four</h4>
@@ -107,37 +131,37 @@
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=bridge onclick="window.location.href='bridge.html'">
+			<div class="game" id=bridge onclick="window.location.href='bridge.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Bridge</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> A game with bridges! </p>
+						<p class="gamedescription" valign="bottom"> Don't fall off! </p>
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=airhockey onclick="window.location.href='airhockey.html'">
+			<div class="game" id=airhockey onclick="window.location.href='airhockey.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Air Hockey</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> The og from 2021! </p>
+						<p class="gamedescription" valign="bottom"> From 2021! </p>
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=soccer onclick="window.location.href='soccer.html'">
+			<div class="game" id=soccer onclick="window.location.href='soccer.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Cheerio Soccer</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> Buckets of FUN! </p>
+						<p class="gamedescription" valign="bottom"> Buckets of fun! </p>
 					</li>
 				</ul>
 			</div>
-			<div class="left game grid-item" id=tron onclick="window.location.href='tron.html'">
+			<div class="game" id=tron onclick="window.location.href='tron.html'">
 				<ul id = "gameInfo">
 					<li>
 						<h4 class="gametitle">Tron</h4>
