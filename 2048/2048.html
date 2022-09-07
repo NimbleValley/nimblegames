@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/NimbleGamesLogoN(1).png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG - 2048</title>
+    <link rel="stylesheet" href="2048.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Erica+One&family=Orbitron:wght@700&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/qli0bbf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="2048.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="menu">
+            <li> <a href="../../dist/games.html" class="backbutton">BACK TO GAMES</a> </li>
+        </ul>
+    </header>
+    <div id = "sidebar">
+        <h1>2048:</h1>
+        <p>
+            Combine numbered tiles in order to reach 2048. Only similar numbers will combine. On the right, you can change options, or pick from presets.
+        </p>
+    </div>
+    <div id = "score">
+        <h1>Score:</h1>
+        <h4 id = "scoreText">
+            0
+        </h4>
+        <h5>High:</h5>
+        <h6 id = "highText">
+            0
+        </h6>
+    </div>
+    
+    <div id="game-board">
+        <div id = "gameStatus">
+            <h3 id = "gameText">Game <br>Over</h3>
+            <button id = "againButton" onClick="window.location.href='2048.html';">Again</button>
+        </div>
+    </div>
+</body>
+
+</html>
