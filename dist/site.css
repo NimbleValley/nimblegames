@@ -68,7 +68,7 @@ iframe:hover {
 #gameIcons {
     width: 50%;
     padding: 1vw;
-    background-image: url("/dist/img/HRD.png");
+    background-image: url("img/HRD.png");
     background-size: 100% 100%;
     border: rgb(196, 72, 0) solid .25vw;
     transition-duration: .5s;
@@ -81,7 +81,7 @@ iframe:hover {
 #artIcons {
     width: 50%;
     padding: 1vw;
-    background-image: url("/dist/img/Japanese.png");
+    background-image: url("img/Japanese.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,7 +97,7 @@ iframe:hover {
 #otherIcons {
     width: 50%;
     padding: 1vw;
-    background-image: url("/dist/img/Constellations.png");
+    background-image: url("img/Constellations.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -137,7 +137,7 @@ iframe:hover {
 
 #banner {
     position: relative;
-    background-image: url("/dist/img/Mountain.png");
+    background-image: url("img/Mountain.png");
     filter: contrast(120%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
