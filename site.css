@@ -371,7 +371,7 @@ iframe:hover {
     box-shadow: .3vw .3vw rgb(196, 72, 0), .6vw .6vw rgb(139, 5, 0);
     border: 5px solid #da8300 !important;
     font-size: 6vh;
-    background-size: 120% 120% !important;
+    scale: 1.1;
 }
 
 .hovertext {
@@ -442,6 +442,17 @@ iframe:hover {
 
 #twentyfourtyeight {
     background-image: url('img/2048.png');
+    background-size: 100%;
+}
+
+#minigolf {
+    background-image: url('img/minigolf.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#snake {
+    background-image: url('img/snake.png');
     background-size: 100%;
 }
 
@@ -819,6 +830,13 @@ footer {
 #review div {
     display: inline;
     padding: 8px;
+}
+
+#snake-iframe {
+    width: 40%;
+    height: 80%;
+    float: right;
+    margin: 3%;
 }
 
 .connectfourcontainer {
