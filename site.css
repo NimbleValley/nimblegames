@@ -16,7 +16,7 @@ body {
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
-    cursor: url("/dist/img/Cursor.svg"), auto;
+    cursor: url("img/Cursor.svg"), auto;
 }
 
 h1,
@@ -151,6 +151,8 @@ iframe:hover {
     color: rgb(250, 133, 0);
     text-shadow: .4vw .4vw rgb(196, 72, 0), .8vw .8vw rgb(139, 5, 0);
     line-height: 55vh;
+    scale: 1.25;
+    z-index: -10;
 }
 
 .fancydivider {
@@ -351,6 +353,9 @@ iframe:hover {
 }
 
 .game {
+    width: 18vw;
+    height: 15vw;
+    margin-bottom: 5vh;
     font-size: 5vh;
     transition-duration: 0.5s;
     background: rgb(168, 0, 0);
@@ -358,7 +363,7 @@ iframe:hover {
     text-align: center;
     border-collapse: collapse;
     display: flex;
-    border: 5px solid #b94a01;
+    border: 0.25vw solid #b94a01;
     position: relative;
     background-position: center;
 }
@@ -369,9 +374,28 @@ iframe:hover {
     text-align: center;
     background-color: black;
     box-shadow: .3vw .3vw rgb(196, 72, 0), .6vw .6vw rgb(139, 5, 0);
-    border: 5px solid #da8300 !important;
-    font-size: 6vh;
-    scale: 1.1;
+    border: 0.25vw solid #da8300 !important;
+}
+
+.game::after {
+    display: flex;
+    content: "Play Game";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    font-family: "montserrat", sans-serif;
+    font-weight: bolder;
+    color: beige;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.25s;
+    font-size: 100%;
+    scale: 0;
+}
+
+.game:hover::after {
+    scale: 1;
 }
 
 .hovertext {
@@ -461,16 +485,31 @@ iframe:hover {
 }
 
 .gamescontainer {
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 50vh 50vh 50vh 50vh;
-    grid-gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+    width: 85%;
+    background-color: #2b2b2b;
+    display: flex;
     position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-left: 1%;
     padding-right: 1%;
-    margin-bottom: 20vh;
     height: fit-content;
+    border-left: rgb(80, 75, 75) 0.25vw solid;
+    border-right: rgb(80, 75, 75) 0.25vw solid;
+}
+
+.gamescontainer::before {
+    background-color: #222121;
+    content: "";
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: -5;
 }
 
 .newsletter {
@@ -529,7 +568,7 @@ iframe:hover {
 }
 
 .websitenewstitle {
-    
+
     font-size: 7vh;
     background: rgb(116, 39, 3);
     margin-left: auto;
@@ -564,27 +603,24 @@ iframe:hover {
     cursor: pointer;
 }
 
-#menu li {
-    display: inline;
-    padding: 0%;
-    margin-top: 0;
-}
-
 header {
     position: fixed;
     background-color: #0e0e0e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    height: 8vh;
+    height: 4vw;
     border: 0;
-    width: 100%;
+    width: 100vw;
     margin-top: 0 !important;
     top: 0% !important;
-    padding-top: 0% !important;
     z-index: 10;
     border-bottom: #524333 solid .5vh;
     transition-duration: 500ms;
     transition-property: background-color border-bottom;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    left: 0;
 }
 
 header:hover {
@@ -613,50 +649,70 @@ li {
 #logo {
     font-style: italic;
     float: left;
-    text-align: center;
-    font-size: 5vh !important;
+    text-align: left;
+    font-size: 3vw !important;
     padding: 0%;
-    margin-top: -1.5vh !important;
+    height: fit-content;
     font-family: 'Chakra Petch', sans-serif;
-    color: rgb(250, 133, 0);
+    color: rgb(216, 131, 34);
     text-decoration: none;
+    flex-grow: 0.5;
 }
 
 #logo:hover {
     cursor: pointer;
     font-family: 'Chakra Petch', sans-serif;
     color: rgb(250, 133, 0);
-    text-shadow: .15vw .15vw rgb(196, 72, 0), .3vw .3vw rgb(139, 5, 0);
+    transform: translate(1vw, 0);
 }
 
 .active {
-    color: #ff7300 !important;
-    font-size: 4.5vh !important;
+    color: #ffae00 !important;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border-bottom: rgb(116, 93, 67) solid 0.35vw;
 }
 
 .mainfields:hover {
     cursor: pointer;
-    color: rgb(250, 133, 0);
-    text-shadow: .1vw .1vw rgb(196, 72, 0), .2vw .2vw rgb(139, 5, 0);
+    color: rgb(0, 0, 0) !important;
+    scale: 1.1;
+}
+
+.mainfields::before {
+    content: "";
+    position: absolute;
+    background-color: #b97429;
+    width: 0%;
+    height: 100%;
+    left: 50%;
+    top: 0%;
+    z-index: -5;
+    transition-duration: 0.25s;
+}
+
+.mainfields:hover::before {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
 }
 
 .mainfields {
     position: relative;
     transition-duration: 0.2s;
-    height: 100% !important;
+    height: fit-content;
     float: right;
     width: auto;
     padding-left: 2%;
     padding-right: 2%;
     background-color: #00000000;
     color: white;
-    font-size: 4vh;
-    margin-top: -1vh;
+    font-size: 2.5vw;
     text-align: center;
-    margin-top: -1vh;
     font-family: montserrat, sans-serif;
     font-weight: 700;
-    color: rgb(250, 162, 0);
+    color: rgb(218, 165, 68);
 }
 
 a {
@@ -668,7 +724,6 @@ a {
 
 a:hover {
     color: rgb(255, 136, 0);
-    text-shadow: .1vw .1vw rgb(196, 72, 0), .2vw .2vw rgb(139, 5, 0);
 }
 
 footer {
@@ -720,11 +775,6 @@ footer {
     font-size: 1.5vw;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 0;
-}
-
-#menu li a {
-    text-decoration: underline;
     margin-top: 0;
 }
 
@@ -978,6 +1028,7 @@ body::-webkit-scrollbar-thumb {
         transform: translateX(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -989,6 +1040,7 @@ body::-webkit-scrollbar-thumb {
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -1000,6 +1052,7 @@ body::-webkit-scrollbar-thumb {
         transform: translateY(50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -1010,6 +1063,7 @@ body::-webkit-scrollbar-thumb {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }

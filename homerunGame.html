@@ -30,8 +30,6 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
-      
-      console.log("Test");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -57,12 +55,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "HomerunBuild";
-      var loaderUrl = buildUrl + "/HOMERUN DERBY BUILD.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/HRDBUILD.loader.js";
       var config = {
-        dataUrl: buildUrl + "/HOMERUN DERBY BUILD.data.gz",
-        frameworkUrl: buildUrl + "/HOMERUN DERBY BUILD.framework.js.gz",
-        codeUrl: buildUrl + "/HOMERUN DERBY BUILD.wasm.gz",
+        dataUrl: buildUrl + "/HRDBUILD.data.gz",
+        frameworkUrl: buildUrl + "/HRDBUILD.framework.js.gz",
+        codeUrl: buildUrl + "/HRDBUILD.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Slam Baseball",
