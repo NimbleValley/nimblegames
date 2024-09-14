@@ -22,9 +22,6 @@
 		<div class="mainfields active" id=gamestab onClick="window.location.href='games.html';">
 			Games
 		</div>
-		<div class="mainfields" id=modelstab onClick="window.location.href='art.html';">
-			Art
-		</div>
 		<div class="mainfields" id=specialtab onclick="window.location.href='special.html';">
 			Other
 		</div>
@@ -34,12 +31,9 @@
 	</header>
 	<main>
 		<div id="banner">
-			Games
+			<div class="banner-title">Games</div>
+			<div class="banner-info">Welcome to the games page. Yes I updated it slightly on 9/14/2024 around 2am. ;)</div>
 		</div>
-
-		<h1>
-			New games coming soon...
-		</h1>
 
 		<div class="fancydivider">
 			<p4 class="scrollicon"> ˅ </p4>
@@ -48,23 +42,55 @@
 		</div>
 
 		<div class="gamescontainer">
-			<div class="game" id="snake" onclick="window.location.href='snake.html'">
+			<h2>Good games:</h2>
+
+			<div class="game" id=homerun2 onclick="window.location.href='homerunderbytwo.html'">
 				<ul id = "gameInfo">
 					<li>
-						<h4 class="gametitle">Snake</h4>
+						<h4 class="gametitle">Homerun Derby 2</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> Modify it! </p>
+						<p class="gamedescription" valign="bottom"> Hit homeruns! </p>
 					</li>
 				</ul>
 			</div>
-			<div class="game" id=minigolf onclick="window.location.href='minigolf.html'">
+			<div class="game" id=soccer onclick="window.location.href='soccer.html'">
 				<ul id = "gameInfo">
 					<li>
-						<h4 class="gametitle">Mini Golf</h4>
+						<h4 class="gametitle">Cheerio Soccer</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom">Make your own course!</p>
+						<p class="gamedescription" valign="bottom"> Buckets of fun! </p>
+					</li>
+				</ul>
+			</div>
+			<div class="game" id="cheerio-soccer-two" onclick="window.location.href='soccer2.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">Cheerio Soccer 2</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom"> Still buckets of fun!</p>
+					</li>
+				</ul>
+			</div>
+			<div class="game" id=anagram onclick="window.location.href='anagram.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">Anagrams</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom"> Best played in school at full volume!! </p>
+					</li>
+				</ul>
+			</div>
+			<div class="game" id=airhockey onclick="window.location.href='airhockey.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">Air Hockey</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom"> From 2021! </p>
 					</li>
 				</ul>
 			</div>
@@ -88,6 +114,16 @@
 					</li>
 				</ul>
 			</div>
+			<!--<div class="game" id=lazers onclick="window.location.href='lazers.html'">
+				<h4 class="gametitle">Lazers</h4>
+				<p class="gamedescription" valign="bottom">
+					Homeruns!
+				</p>
+			</div>
+		-->
+
+			<h2>Bad games:</h2>
+			
 			<div class="game" id=volleyball onclick="window.location.href='Volleyball.html'">
 				<ul id = "gameInfo">
 					<li>
@@ -98,20 +134,23 @@
 					</li>
 				</ul>
 			</div>
-			<!--<div class="game" id=lazers onclick="window.location.href='lazers.html'">
-				<h4 class="gametitle">Lazers</h4>
-				<p class="gamedescription" valign="bottom">
-					Homeruns!
-				</p>
-			</div>
-		-->
-			<div class="game" id=homerun onclick="window.location.href='homerunderby.html'">
+			<div class="game" id="snake" onclick="window.location.href='snake.html'">
 				<ul id = "gameInfo">
 					<li>
-						<h4 class="gametitle">Homerun Derby</h4>
+						<h4 class="gametitle">Snake</h4>
 					</li>
 					<li>
-						<p class="gamedescription" valign="bottom"> Hit homeruns! </p>
+						<p class="gamedescription" valign="bottom"> Modify it! </p>
+					</li>
+				</ul>
+			</div>
+			<div class="game" id=minigolf onclick="window.location.href='minigolf.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">Mini Golf</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom">Make your own course!</p>
 					</li>
 				</ul>
 			</div>
@@ -145,26 +184,6 @@
 					</li>
 				</ul>
 			</div>
-			<div class="game" id=airhockey onclick="window.location.href='airhockey.html'">
-				<ul id = "gameInfo">
-					<li>
-						<h4 class="gametitle">Air Hockey</h4>
-					</li>
-					<li>
-						<p class="gamedescription" valign="bottom"> From 2021! </p>
-					</li>
-				</ul>
-			</div>
-			<div class="game" id=soccer onclick="window.location.href='soccer.html'">
-				<ul id = "gameInfo">
-					<li>
-						<h4 class="gametitle">Cheerio Soccer</h4>
-					</li>
-					<li>
-						<p class="gamedescription" valign="bottom"> Buckets of fun! </p>
-					</li>
-				</ul>
-			</div>
 			<div class="game" id=tron onclick="window.location.href='tron.html'">
 				<ul id = "gameInfo">
 					<li>
@@ -175,17 +194,29 @@
 					</li>
 				</ul>
 			</div>
+			
+			<h2>Probably broken:</h2>
+			<div class="game" id=homerun onclick="window.location.href='homerunderby.html'">
+				<ul id = "gameInfo">
+					<li>
+						<h4 class="gametitle">Homerun Derby 1</h4>
+					</li>
+					<li>
+						<p class="gamedescription" valign="bottom"> It's not good :(</p>
+					</li>
+				</ul>
+			</div>
 		</div>
-
+			
 		<div class = "counterContainer">
 			<a href="https://www.hitwebcounter.com" target="_blank">
 				<img src="https://hitwebcounter.com/counter/counter.php?page=7984673&style=0009&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a></div>	
-	</main>
-	<script src="banner-cursor.js"></script>
-</body>
-<footer>
-	&copy; 2022 Nimble Games - All rights reserved.
-</footer>
+			</main>
+			<!--<script src="banner-cursor.js"></script>-->
+		</body>
+		<footer>
+			&copy; 2022 Nimble Games - All rights reserved.
+		</footer>
 </body>
 
 </html>
