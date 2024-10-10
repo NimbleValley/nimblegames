@@ -185,6 +185,7 @@ iframe:hover {
     height: fit-content;
     margin-top: 12vh;
     width: fit-content;
+    user-select: none;
 }
 
 .banner-info {
@@ -203,12 +204,25 @@ iframe:hover {
     margin-bottom: 10vh;
     z-index: 10;
     transition: background-color 0.35s, scale 0.25s;
+    animation: banner-info 1.75s infinite;
 }
 
 .banner-info:hover {
     background-color: rgba(255, 166, 0, 0.534) !important;
     cursor: pointer;
     scale: 1.1;
+}
+
+@keyframes banner-info {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .fancydivider {
@@ -512,6 +526,12 @@ iframe:hover {
 
 #homerun {
     background-image: url('img/OakGroveStadium.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#volleyball2 {
+    background-image: url('img/image.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
