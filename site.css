@@ -185,6 +185,7 @@ iframe:hover {
     height: fit-content;
     margin-top: 12vh;
     width: fit-content;
+    max-width: 100vw;
     user-select: none;
 }
 
@@ -231,6 +232,7 @@ iframe:hover {
     border-bottom: rgb(196, 72, 0) solid .75vh;
     position: relative;
     z-index: 20;
+    user-select: none;
 }
 
 .scrollicon {
@@ -532,6 +534,12 @@ iframe:hover {
 
 #volleyball2 {
     background-image: url('img/image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#bust {
+    background-image: url('img/bust.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -903,74 +911,53 @@ footer {
     width: 100%;
 }
 
-#reviewContainer {
-    background-color: #141314;
+#review-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-    height: 30%;
+    height: fit-content;
     margin-top: 10%;
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
-    border-top: 10px solid black;
-    border-bottom: 10px solid black;
+    border-top: 0.5vh solid rgb(219,117,0);
+    border-bottom: 0.5vh solid rgb(219,117,0);
+    display: flex;
+    justify-content: space-around;
 }
 
-#reviewHeading {
-    margin-top: 0;
-}
-
-#review {
-    text-shadow: 0px 0px 10px rgb(192, 189, 16);
+.review {
     padding: 0%;
     position: relative;
-    background-color: #141314;
     text-align: center;
     max-width: 20%;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     float: left;
     margin-top: 0;
     height: 100%;
-    color: #28a70f;
-    font-size: 400%;
+    color: #f06654;
+    font-size: 8vh;
     width: 25%;
+    height: fit-content;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
 }
 
-#review:hover {
-    background-color: #2b2b2b;
-    color: #ffc400;
-    text-shadow: 1px 1px 50px rgb(60, 255, 0);
-    cursor: cell;
+.review:hover {
+    scale: 1.1;
 }
 
-#reviewTitle {
+.review-title {
     font-size: 25%;
     text-shadow: 0px 0px 30px rgb(133, 133, 133);
-}
-
-#specialHeading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(202, 195, 129);
-    text-align: center;
-    font-size: 50px;
-    color: black;
-    transition-duration: 1ms;
+    text-decoration: none !important;
 }
 
 #review div {
     display: inline;
-    padding: 8px;
-}
-
-#snake-iframe {
-    width: 40%;
-    height: 80%;
-    float: right;
-    margin: 3%;
+    padding: 1vh;
 }
 
 .connectfourcontainer {
